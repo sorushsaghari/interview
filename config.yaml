@@ -1,0 +1,15 @@
+source: "kafka" # or "csv"
+csv_file: "data.csv"
+kafka:
+  brokers:
+    - "kafka:9092"
+  topic: "promotions"
+  group_id: "promotion-consumer-group"
+  batch_size: 100
+database:
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "12345"
+  dbname: "postgres"
+  sslmode: "disable"
